@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Model artifacts
+*.pth
+*.pkl
+backend/**/models/
+
+# OS metadata
+.DS_Store
+
+# Environment variables
+.env
+*.env
+
+# Cache and logs
+*.log
+*.cache/
+*.tmp
+
+# IDE config
+.vscode/
+.idea/
