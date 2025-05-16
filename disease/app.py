@@ -42,6 +42,10 @@ def preprocess_image(image):
     input_tensor = preprocess(image).unsqueeze(0).to(device)
     return input_tensor
 
+@app.route("/")
+def home():
+    return "Disease Backend is running!"
+
 @app.route('/predict_disease', methods=['POST'])
 def predict_disease():
     if 'file' not in request.files:

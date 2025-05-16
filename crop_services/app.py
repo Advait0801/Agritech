@@ -33,6 +33,10 @@ with open(FILE_PATHS["yield_model"], "rb") as f:
 with open(FILE_PATHS["recommendation_model"], "rb") as f:
     crop_model = pickle.load(f)
 
+@app.route("/")
+def home():
+    return "Crop Services Backend is running!"
+
 @app.route("/predict_yield", methods=["POST"])
 def predict_yield():
     try:
